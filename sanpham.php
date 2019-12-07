@@ -15,11 +15,12 @@ if(isset($_GET["masp"])){
             $thuonghieu = $row['thuonghieu'];
             $dungtich = $row['dungtich'];
             $mota = $row['mota'];
+            $congdung = $row['congdung'];
             $dongia = $row['dongia'];
             $soluongcosan = $row['soluongcosan'];
             $phivanchuyen = $row['phivanchuyen'];
             $anh = $row['link'];
-            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $dongia, $soluongcosan, $phivanchuyen, $anh];
+            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $congdung, $dongia, $soluongcosan, $phivanchuyen, $anh];
         } 
     }   
     echo json_encode($temparray);
@@ -38,11 +39,12 @@ else if(isset($_GET["maloai"])){
             $thuonghieu = $row['thuonghieu'];
             $dungtich = $row['dungtich'];
             $mota = $row['mota'];
+            $congdung = $row['congdung'];
             $dongia = $row['dongia'];
             $soluongcosan = $row['soluongcosan'];
             $phivanchuyen = $row['phivanchuyen'];
             $anh = $row['link'];
-            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $dongia, $soluongcosan, $phivanchuyen, $anh];
+            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $congdung, $dongia, $soluongcosan, $phivanchuyen, $anh];
         } 
     }   
     echo json_encode($temparray);
@@ -61,11 +63,12 @@ else{
             $thuonghieu = $row['thuonghieu'];
             $dungtich = $row['dungtich'];
             $mota = $row['mota'];
+            $congdung = $row['congdung'];
             $dongia = $row['dongia'];
             $soluongcosan = $row['soluongcosan'];
             $phivanchuyen = $row['phivanchuyen'];
             $anh = $row['link'];
-            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $dongia, $soluongcosan, $phivanchuyen, $anh];
+            $temparray[] = [$masp, $tensp, $thuonghieu, $dungtich, $mota, $congdung, $dongia, $soluongcosan, $phivanchuyen, $anh];
         } 
     }   
     echo json_encode($temparray);

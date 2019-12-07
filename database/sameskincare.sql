@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 07, 2019 lúc 06:11 AM
+-- Thời gian đã tạo: Th12 07, 2019 lúc 07:16 AM
 -- Phiên bản máy phục vụ: 10.3.16-MariaDB
 -- Phiên bản PHP: 7.3.6
 
@@ -234,7 +234,8 @@ INSERT INTO `sanpham` (`masp`, `tensp`, `thuonghieu`, `dungtich`, `mota`, `dongi
 CREATE TABLE `shop` (
   `mashop` int(10) NOT NULL,
   `tenshop` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `diachi` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `diachi` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `sodienthoai` varchar(11) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -245,14 +246,14 @@ CREATE TABLE `shop` (
 
 CREATE TABLE `slideshow` (
   `maslide` int(10) NOT NULL,
-  `imageslisde` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `imageslide` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `slideshow`
 --
 
-INSERT INTO `slideshow` (`maslide`, `imageslisde`) VALUES
+INSERT INTO `slideshow` (`maslide`, `imageslide`) VALUES
 (1, 'b1.jpg'),
 (2, 'k1.jpg'),
 (3, 'kd1.jpg'),
@@ -276,14 +277,14 @@ CREATE TABLE `user` (
   `gioitinh` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
   `diachi` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `sodienthoai` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
-  `Email` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `user`
 --
 
-INSERT INTO `user` (`mauser`, `username`, `password`, `hoten`, `gioitinh`, `diachi`, `sodienthoai`, `Email`) VALUES
+INSERT INTO `user` (`mauser`, `username`, `password`, `hoten`, `gioitinh`, `diachi`, `sodienthoai`, `email`) VALUES
 (1, 'phanhung', '123', 'Phan Hùng', 'nam', 'Huế', '0364859754', 'phanhung.12a1.pdl@gmail.com'),
 (2, 'ngocdieu', '123', 'Lê Thị Ngọc Diệu', 'nữ', 'Quảng Nam', '09031542846', 'diudiu@gmail.com');
 
